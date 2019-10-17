@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.storecast.gildedRose.item;
+package de.storecast.gildedRose.item.enums;
 
 /**
  * @author luca
@@ -11,7 +11,7 @@ public enum ItemEnum
 {
 
     AGED_BRIE("Aged Brie"), BACKSTAGE_PASSES_TO_CONCERT("Backstage passes to a TAFKAL80ETC concert"), SULFURAS(
-            "Sulfuras, Hand of Ragnaros"), CONJURED("Conjured");
+            "Sulfuras, Hand of Ragnaros"), CONJURED("Conjured"), DEFAULT("Default");
 
     private String description;
 

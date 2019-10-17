@@ -3,6 +3,8 @@
  */
 package de.storecast.gildedRose.item;
 
+import de.storecast.gildedRose.item.factory.Items;
+
 /**
  * @author luca
  *
@@ -27,28 +29,26 @@ public class Sulfuras extends Items
     @Override
     public void processBackstagePassedToConcert()
     {
-        super.processBackstagePassedToConcert();
 
     }
 
     @Override
     public void incrementQuality()
     {
-        super.incrementQuality();
 
     }
 
     @Override
     public void decrementQuality()
     {
-        super.decrementQuality();
 
     }
 
     @Override
     public void updateQuality()
     {
-        super.updateQuality();
+        if (getItem().quality != SULFURAS_QUALITY)
+            throw new IllegalArgumentException("Sulfuras quality should be 80!");
 
     }
 

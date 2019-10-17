@@ -3,6 +3,8 @@
  */
 package de.storecast.gildedRose.item;
 
+import de.storecast.gildedRose.item.factory.Items;
+
 /**
  * @author luca
  *
@@ -16,13 +18,11 @@ public class Conjured extends Items
     public Conjured(Item item)
     {
         super(item);
-        // TODO Auto-generated constructor stub
     }
 
     @Override
     public boolean canSell()
     {
-        // TODO Auto-generated method stub
         return true;
     }
 
@@ -43,15 +43,15 @@ public class Conjured extends Items
     @Override
     public void decrementQuality()
     {
-        // TODO Auto-generated method stub
-
+        super.decrementQuality();
     }
 
     @Override
     public void updateQuality()
     {
-        // TODO Auto-generated method stub
-
+        super.updateQuality();
+        decrementQuality();
+        decrementQuality();
     }
 
 }

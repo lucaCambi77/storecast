@@ -1,7 +1,15 @@
 /**
  * 
  */
-package de.storecast.gildedRose.item;
+package de.storecast.gildedRose.item.factory;
+
+import de.storecast.gildedRose.item.AgedBrie;
+import de.storecast.gildedRose.item.BackstagePassesToConcert;
+import de.storecast.gildedRose.item.Conjured;
+import de.storecast.gildedRose.item.DefaultItem;
+import de.storecast.gildedRose.item.Item;
+import de.storecast.gildedRose.item.Sulfuras;
+import de.storecast.gildedRose.item.enums.ItemEnum;
 
 /**
  * @author luca
@@ -28,8 +36,7 @@ public class ItemFactory
                 return new Conjured(new Item(item.getDescription(), sellIn, quality));
 
             default:
-                break;
+                return new DefaultItem(new Item(item.getDescription(), sellIn, quality));
         }
-        return null;
     }
 }

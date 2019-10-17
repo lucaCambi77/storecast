@@ -3,6 +3,8 @@
  */
 package de.storecast.gildedRose.item;
 
+import de.storecast.gildedRose.item.factory.Items;
+
 /**
  * @author luca
  *
@@ -59,6 +61,7 @@ public class BackstagePassesToConcert extends Items
     @Override
     public void updateQuality()
     {
+        super.updateQuality();
         processBackstagePassedToConcert();
 
     }

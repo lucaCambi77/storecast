@@ -9,13 +9,13 @@ import de.storecast.gildedRose.item.factory.Items;
  * @author luca
  *
  */
-public class AgedBrie extends Items
+public class DefaultItem extends Items
 {
 
     /**
      * @param item
      */
-    public AgedBrie(Item item)
+    public DefaultItem(Item item)
     {
         super(item);
     }
@@ -23,7 +23,7 @@ public class AgedBrie extends Items
     @Override
     public boolean canSell()
     {
-        return false;
+        return true;
     }
 
     @Override
@@ -51,7 +51,7 @@ public class AgedBrie extends Items
     public void updateQuality()
     {
         super.updateQuality();
-        incrementQuality();
+        decrementQuality();
 
     }
 
